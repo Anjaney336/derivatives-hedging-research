@@ -18,10 +18,14 @@ Seeded synthetic option paths plus vendor-adjusted DLF closes accessed 24 Octobe
 Python 3.12. Install `requirements.txt`, then run `python reproduce.py`. Default tests/research run offline; historical runs need the local authorized cache. New entry point: `strategy_experiments.py`. Add `--prices /path/to/prices.csv` for historical strategy/derivative experiments.
 
 ## Verification
-32 tests across the consolidated reproduction command. CI runs the same command. See ENGINEERING.md for boundaries and release checks. The dashboard displays bundled reports; change its view selector to compare analyses, and download CSV/JSON evidence.
+37 tests across the consolidated reproduction command. CI runs the same command. See ENGINEERING.md for boundaries and release checks. The dashboard displays bundled reports; change its view selector to compare analyses, and download CSV/JSON evidence.
 
 ## Limits
 Gann fan settings are one explicit experimental definition, not a canonical or validated predictive rule. Options are model-priced, with assumed liquidity and no real chain. Taylor residuals include cross and higher-order risk.
 
 ## Lineage and authorship
 Consolidates existing research modules; original repositories remain as history. This is AI-assisted portfolio research, not code represented as deployed at a financial institution.
+
+## Greek coverage and cost-inclusive hedge audit
+
+[Full coverage, results and limitations](GREEKS_AND_HEDGING.md). All five Greeks and IV inversion are implemented; dynamic hedging covers delta/gamma. New paired simulations include the target entry fee and financing. 37 tests pass; 360 numerical Greek comparisons pass. Lower RMSE does not imply positive P&L or better downside protection.
