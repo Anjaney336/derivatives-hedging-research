@@ -86,6 +86,7 @@
     "cost_sensitivity.csv": "52e2c40db57784b73b787ed109818eb7629d2501c1a287535b9833615b123b32",
     "example_ledger.csv": "fd3e90291b30d5106c5aa72b968c0eb034c9b297eca590076425a0c62eeb5dc8",
     "gamma_trials.csv": "65bb0d3cfbab67c9e8f4d7f7e4c8ee105a812745d0a03fd62a79e07fa706a9ad",
+    "greek_stress.csv": "ecc14921d1f0a4dd0c749a9bcda55bf3c034ebec3de4d37348ba662ee85afd5a",
     "heldout_trials.csv": "80f0abfe2f52550f127a1a587b1ce832ad2dfba7aafeb9181a8331525e0839b8",
     "historical_underlying_replay.csv": "5f2ac5e4808555a459b12329cd1e60ba94e0a93e011d1103a428b01fa26d786e"
   }

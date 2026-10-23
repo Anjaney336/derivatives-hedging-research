@@ -1,0 +1,53 @@
+{
+  "source": {
+    "name": "Seeded geometric paths",
+    "url": "https://github.com/Anjaney336/derivatives-hedging-research/blob/main/strategy_experiments.py",
+    "access_date": "2026-10-24",
+    "seed": 20261024
+  },
+  "results": {
+    "rolling_nine_rule_selection": {
+      "observations": 695,
+      "total_return": 0.1745530055659512,
+      "cagr": 0.06007137741673274,
+      "sharpe_zero_rf": 0.7041381921250984,
+      "max_drawdown": -0.07770793449157343
+    },
+    "fan_slope_0.5": {
+      "observations": 695,
+      "total_return": -0.025308361491399922,
+      "cagr": -0.009251613994347596,
+      "sharpe_zero_rf": -0.2604956287399573,
+      "max_drawdown": -0.07782083147052743
+    },
+    "fan_slope_1": {
+      "observations": 695,
+      "total_return": 0.005389391679790245,
+      "cagr": 0.0019507924990278536,
+      "sharpe_zero_rf": 0.09374152778978259,
+      "max_drawdown": -0.03531956491383237
+    },
+    "fan_slope_2": {
+      "observations": 695,
+      "total_return": 0.0,
+      "cagr": 0.0,
+      "sharpe_zero_rf": 0.0,
+      "max_drawdown": 0.0
+    },
+    "buy_hold": {
+      "observations": 695,
+      "total_return": 0.5603642797978594,
+      "cagr": 0.17506475815995937,
+      "sharpe_zero_rf": 0.793488724738447,
+      "max_drawdown": -0.22339793716698297
+    }
+  },
+  "cost_bps": 10,
+  "assumptions": "Fan anchored at trailing 63-observation low through t-2; slope in trailing standard-deviation-of-price-change units per bar. Equal allocation to positive signals, no shorts. Slopes .5/1/2 reported without selecting a winner.",
+  "reference": {
+    "name": "TradingView Gann fan definition",
+    "url": "https://www.tradingview.com/support/solutions/43000518151-gann-fan-drawing-tool/",
+    "access_date": "2026-10-24"
+  },
+  "limitations": "Our normalized fan is an explicit experimental variant, not a uniquely canonical Gann implementation. Same historical sample previously inspected. Equity benchmark P&L is distinct from model-priced option hedge results. No empirical options alpha inferred."
+}
